@@ -28,16 +28,65 @@ public class ManagerController {
         return managerRepository.findAll();
     }
 
+
     /**
-     * 添加一个管理员
+     * 管理员登录
      * @param manager
      * @return
      */
-    @PostMapping(value = "/admin")
-    public Manager managerAdd(Manager manager){
-//        manager.setM_name(manager.getM_name());
-        manager.setM_num(manager.getM_num());
-        manager.setM_pwd(manager.getM_pwd());
-        return managerRepository.save(manager);
+    @GetMapping(value = "/adminLogin")
+    public Manager adminLogin(Manager manager){
+        String admnum=manager.getAdmnum();
+        String admpwd=manager.getAdmpwd();
+        return managerRepository.findByAdmnumAndAdmpwd(admnum, admpwd);
+    }
+
+    /**
+     * 管理员注册
+     * @param manager
+     * @return
+     */
+    @PostMapping(value = "/adminRegister")
+    public Manager addManager(Manager manager){
+        manager.setAdmnum(manager.getAdmnum());
+        manager.setAdmpwd(manager.getAdmpwd());
+        if(managerRepository.findByAdmnum(manager.getAdmnum()) == null){
+            logger.info("注册用户账号："+manager.getAdmnum()+"  成功！");
+            return managerRepository.save(manager);
+        }else{
+            logger.info("用户账号："+manager.getAdmnum()+"  已存在，注册失败！");
+            return managerRepository.findByAdmnum("0");
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /**
+     * 根据账号查找管理员
+     * @param manager
+     * @return
+     */
+    @PostMapping(value = "/findByAdmnum")
+    public Manager findByAdmnum(Manager manager){
+        Manager mone=managerRepository.findByAdmnum(manager.getAdmnum());
+        if(mone == null){
+            logger.info("为空null");
+        }else{
+            logger.info(" 啊啊啊 ");
+        }
+        return managerRepository.findByAdmnum(manager.getAdmnum());
     }
 }

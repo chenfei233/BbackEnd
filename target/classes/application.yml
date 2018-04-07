@@ -3,6 +3,7 @@ server:
   servlet:
     context-path: /Bibased
 spring:
+# 数据库配置
   datasource:
     driver-class-name: oracle.jdbc.OracleDriver
     url: jdbc:oracle:thin:@127.0.0.1:1521:orcl
@@ -12,3 +13,20 @@ spring:
     hibernate:
       ddl-auto: create
     show-sql: true
+# 邮箱服务
+  mail:
+    host: smtp.163.com
+    username: leizaifeizizaifei@163.com
+    password: 597479975xff
+    default-encoding: utf-8
+    artemis:
+        port: 587
+    properties:
+          mail:
+            smtp:
+              auth: true
+              starttls:
+                enable: true
+                required: true
+mail.fromMail.addr: leizaifeizizaifei@163.com
+

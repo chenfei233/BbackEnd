@@ -1,50 +1,63 @@
 package com.cf.bbackend.domain;
 
+import javax.persistence.Id;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 
+/**
+ * 管理员表
+ */
 @Entity
 public class Manager {
+
     @Id
     @GeneratedValue
-    private Integer m_id;
-    private String m_name;
-    private String m_num;
-    private String m_pwd;
+    private Integer admid;   // 管理员id
+    private String admname;  // 管理员姓名
+    private String admicon;  // 管理员头像
+    private String admnum;   // 管理员账号
+    private String admpwd;   // 管理员密码
 
     public Manager() {
     }
 
-    public Integer getM_id() {
-        return m_id;
+    public Integer getAdmid() {
+        return admid;
     }
 
-    public void setM_id(Integer m_id) {
-        this.m_id = m_id;
+    public void setAdmid(Integer admid) {
+        this.admid = admid;
     }
 
-    public String getM_name() {
-        return m_name;
+    public String getAdmname() {
+        return admname;
     }
 
-    public void setM_name(String m_name) {
-        this.m_name = m_name;
+    public void setAdmname(String admname) {
+        this.admname = admname;
     }
 
-    public String getM_num() {
-        return m_num;
+    public String getAdmicon() {
+        return admicon;
     }
 
-    public void setM_num(String m_num) {
-        this.m_num = m_num;
+    public void setAdmicon(String admicon) {
+        this.admicon = admicon;
     }
 
-    public String getM_pwd() {
-        return m_pwd;
+    public String getAdmnum() {
+        return admnum;
     }
 
-    public void setM_pwd(String m_pwd) {
-        this.m_pwd = m_pwd;
+    public void setAdmnum(String admnum) {
+        this.admnum = admnum;
+    }
+
+    public String getAdmpwd() {
+        return admpwd;
+    }
+
+    public void setAdmpwd(String admpwd) {
+        this.admpwd = admpwd;
     }
 }
