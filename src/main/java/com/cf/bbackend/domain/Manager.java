@@ -1,5 +1,7 @@
 package com.cf.bbackend.domain;
 
+import lombok.Data;
+
 import javax.persistence.Id;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,56 +10,32 @@ import javax.persistence.GeneratedValue;
  * 管理员表
  */
 @Entity
+@Data
 public class Manager {
 
+    /** 管理员id. */
     @Id
     @GeneratedValue
-    private Integer admid;   // 管理员id
-    private String admname;  // 管理员姓名
-    private String admicon;  // 管理员头像
-    private String admnum;   // 管理员账号
-    private String admpwd;   // 管理员密码
+    private Integer admid;
 
-    public Manager() {
-    }
+    /** 管理员姓名. */
+    private String admname;
 
-    public Integer getAdmid() {
-        return admid;
-    }
+    /** 管理员头像. */
+    private String admicon;
 
-    public void setAdmid(Integer admid) {
-        this.admid = admid;
-    }
+    /** 管理员账号. */
+    private String admnum;
 
-    public String getAdmname() {
-        return admname;
-    }
+    /** 管理员密码. */
+    private String admpwd;
 
-    public void setAdmname(String admname) {
+    public Manager(){}
+
+    public Manager(String admname, String admicon, String admnum, String admpwd) {
         this.admname = admname;
-    }
-
-    public String getAdmicon() {
-        return admicon;
-    }
-
-    public void setAdmicon(String admicon) {
         this.admicon = admicon;
-    }
-
-    public String getAdmnum() {
-        return admnum;
-    }
-
-    public void setAdmnum(String admnum) {
         this.admnum = admnum;
-    }
-
-    public String getAdmpwd() {
-        return admpwd;
-    }
-
-    public void setAdmpwd(String admpwd) {
         this.admpwd = admpwd;
     }
 }

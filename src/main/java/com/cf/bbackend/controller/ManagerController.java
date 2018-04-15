@@ -5,13 +5,19 @@ import com.cf.bbackend.domain.Manager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+/**
+ * 管理操作
+ */
 @RestController
+@RequestMapping("/manager")
 public class ManagerController {
 
     private final static Logger logger= LoggerFactory.getLogger(ManagerController.class);
@@ -39,6 +45,7 @@ public class ManagerController {
         String admnum=manager.getAdmnum();
         String admpwd=manager.getAdmpwd();
         return managerRepository.findByAdmnumAndAdmpwd(admnum, admpwd);
+//        Assert.assertNotNull(managerRepository.findByAdmnumAndAdmpwd(admnum, admpwd));
     }
 
     /**

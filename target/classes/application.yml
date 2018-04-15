@@ -1,6 +1,8 @@
 server:
+# 端口号
   port: 8080
   servlet:
+# 路径
     context-path: /Bibased
 spring:
 # 数据库配置
@@ -11,7 +13,7 @@ spring:
     password: 123456
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     show-sql: true
 # 邮箱服务
   mail:
@@ -29,4 +31,10 @@ spring:
                 enable: true
                 required: true
 mail.fromMail.addr: leizaifeizizaifei@163.com
+## 配置日志
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+
+
 

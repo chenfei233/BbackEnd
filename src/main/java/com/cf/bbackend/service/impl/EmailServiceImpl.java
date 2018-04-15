@@ -1,4 +1,4 @@
-package com.cf.bbackend.service.serviceImpl;
+package com.cf.bbackend.service.impl;
 
 import com.cf.bbackend.service.EmailService;
 import java.io.File;

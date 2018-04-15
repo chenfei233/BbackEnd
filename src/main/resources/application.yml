@@ -31,4 +31,10 @@ spring:
                 enable: true
                 required: true
 mail.fromMail.addr: leizaifeizizaifei@163.com
+## 配置日志
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+
+
 
