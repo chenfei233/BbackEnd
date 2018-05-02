@@ -35,4 +35,17 @@ public class Oyuser {
 
     /** 用户简介. */
     private String oybrief;
+
+    public Oyuser() {
+    }
+
+    public Oyuser(String oynum, String oyname, String oypswd, String oyicon, String oyemail, String oybrief) {
+        this.oynum = oynum;
+        this.oyname = oyname;
+        this.oypswd = oypswd;
+        this.oyicon = oyicon;
+        this.oyemail = oyemail;
+        this.oybrief = oybrief;
+    }
+
 }

@@ -23,7 +23,7 @@ public class CategoryController {
     private CategoryService categoryService;
 
     /** 添加/更新. */
-    @PostMapping(value = "/save")
+    @PostMapping(value = "/addOrUpdata")
     public Category addOrUpdata(Category category){
         logger.info(" 类别-->添加/更新 ");
         category.setCgyname(category.getCgyname());
@@ -32,7 +32,7 @@ public class CategoryController {
     }
 
     /** 查询一条. */
-    @GetMapping(value = "/byOne")
+    @GetMapping(value = "/findByCgyid")
     public Category findByCgyid(Category category){
         logger.info(" 类别-->查询 ");
         return categoryService.findByCgyid(category.getCgyid());

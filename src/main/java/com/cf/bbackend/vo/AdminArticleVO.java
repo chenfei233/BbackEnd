@@ -3,11 +3,10 @@ package com.cf.bbackend.vo;
 import lombok.Data;
 
 /**
- * 请求返回
- *   管理员页面的文章对象信息
+ * 管理员首页文章请求返回
  */
 @Data
-public class ArticleVO {
+public class AdminArticleVO {
 
     /** 文章ID. */
     private Integer aieid;
@@ -26,4 +25,5 @@ public class ArticleVO {
 
     /** 发布用户. */
     private String urname;
+
 }

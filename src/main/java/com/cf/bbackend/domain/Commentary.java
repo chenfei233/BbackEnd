@@ -7,11 +7,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 /**
- * 评论表comment
+ * 评论表commentary
  */
 @Entity
 @Data
-public class Comment {
+public class Commentary {
 
     /** 评论id. */
     @Id
@@ -29,4 +29,14 @@ public class Comment {
 
     /** 普通用户id. */
     private Integer oyid;
+
+    public Commentary() {
+    }
+
+    public Commentary(String cmtcontent, String cmttime, Integer aieid, Integer oyid) {
+        this.cmtcontent = cmtcontent;
+        this.cmttime = cmttime;
+        this.aieid = aieid;
+        this.oyid = oyid;
+    }
 }

@@ -25,17 +25,28 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     @Override
-    public List<Article> userFindAll() {
-        return articleRepository.findAll();
-    }
-
-    @Override
-    public Page<Article> adminFindAll(Pageable pageable) {
-        return articleRepository.findAll(pageable);
-    }
-
-    @Override
     public Article addOrUpdata(Article article) {
         return articleRepository.save(article);
     }
+
+    @Override
+    public List<Article> findByAiestate(Integer Aiestate) {
+        return articleRepository.findByAiestate(Aiestate);
+    }
+
+    @Override
+    public int countByAiestate(Integer Aiestate) {
+        return articleRepository.countByAiestate(Aiestate);
+    }
+
+    @Override
+    public List<Article> findByPhidAndAiestate(Integer Phid, Integer Aiestate) {
+        return articleRepository.findByPhidAndAiestate(Phid,Aiestate);
+    }
+
+    @Override
+    public int countByPhidAndAiestate(Integer Phid, Integer Aiestate) {
+        return articleRepository.countByPhidAndAiestate(Phid,Aiestate);
+    }
+
 }

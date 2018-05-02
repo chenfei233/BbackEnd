@@ -35,4 +35,16 @@ public class Phuser {
 
     /** 用户简介. */
     private String phbrief;
+
+    public Phuser() {
+    }
+
+    public Phuser(String phnum, String phname, String phpswd, String phicon, String phemail, String phbrief) {
+        this.phnum = phnum;
+        this.phname = phname;
+        this.phpswd = phpswd;
+        this.phicon = phicon;
+        this.phemail = phemail;
+        this.phbrief = phbrief;
+    }
 }

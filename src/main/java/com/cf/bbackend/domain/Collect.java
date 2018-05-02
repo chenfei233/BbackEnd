@@ -16,7 +16,7 @@ public class Collect {
     /** 收藏id. */
     @Id
     @GeneratedValue
-    private Integer cmtid;
+    private Integer cltid;
 
     /** 文章id. */
     private Integer aieid;
@@ -24,4 +24,11 @@ public class Collect {
     /** 普通用户id. */
     private Integer oyid;
 
+    public Collect() {
+    }
+
+    public Collect(Integer aieid, Integer oyid) {
+        this.aieid = aieid;
+        this.oyid = oyid;
+    }
 }
