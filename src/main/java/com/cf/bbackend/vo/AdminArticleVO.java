@@ -21,7 +21,7 @@ public class AdminArticleVO {
     private String aietime;
 
     /** 文章状态. */
-    private Integer aiestate;
+    private String aiestate;
 
     /** 发布用户. */
     private String urname;

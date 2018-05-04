@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * 类别操作
  */
 @RestController
-@RequestMapping("/category")
+@RequestMapping("/Category")
 public class CategoryController {
 
     private final static Logger logger= LoggerFactory.getLogger(CategoryController.class);

@@ -10,6 +10,12 @@ import java.util.List;
  */
 public interface ArticleService {
 
+    /** 查询全部文章 */
+    List<Article> findAll();
+
+    /** 查询全部文章数目 */
+    int countAll();
+
     /** 查询某一条. */
     Article findByAieid(Integer aieId);
 
@@ -22,7 +28,7 @@ public interface ArticleService {
     /** 查询某状态的全部文章数目 */
     int countByAiestate(Integer Aiestate);
 
-    /** 查询某发布用户的某个状态的文章 */
+    /** 查询某发布用户的某个状态的文章(分页) */
     List<Article> findByPhidAndAiestate(Integer Phid,Integer Aiestate);
 
     /** 查询某发布用户的某个状态的文章数目 */

@@ -20,6 +20,16 @@ public class ArticleServiceImpl implements ArticleService {
     private ArticleRepository articleRepository;
 
     @Override
+    public List<Article> findAll() {
+        return articleRepository.findAll();
+    }
+
+    @Override
+    public int countAll() {
+        return (int)articleRepository.count();
+    }
+
+    @Override
     public Article findByAieid(Integer aieId) {
         return articleRepository.findByAieid(aieId);
     }
@@ -41,6 +51,7 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Override
     public List<Article> findByPhidAndAiestate(Integer Phid, Integer Aiestate) {
+//        Page<Article> articlePage=articleRepository.findByPhidAndAiestate(Phid,Aiestate,pageable);
         return articleRepository.findByPhidAndAiestate(Phid,Aiestate);
     }
 

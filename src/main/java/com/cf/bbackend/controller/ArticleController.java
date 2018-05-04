@@ -13,6 +13,7 @@ import com.cf.bbackend.vo.ResultVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -37,17 +38,40 @@ public class ArticleController {
     private PhuserService phuserService;
 
     /**
-     * 添加文章
+     * 管理员 查询全部文章
+     * @return
+     */
+    @GetMapping(value = "/findAll")
+    public ResultVO<Article> findAll(){
+        int count=articleService.countAll();
+        List<Article> articleList=articleService.findAll();
+        List<AdminArticleVO> AdminArticleVOList=new ArrayList<>();
+        for (Article a:articleList){
+            AdminArticleVO adminArticleVO=new AdminArticleVO();
+            adminArticleVO.setAieid(a.getAieid());
+            adminArticleVO.setAietitle(a.getAietitle());
+            adminArticleVO.setAiesort(categoryService.findByCgyid(a.getCgyid()).getCgyname());
+            adminArticleVO.setAietime(a.getAietime());
+            adminArticleVO.setAiestate(getAiestate(a.getAiestate()));
+            adminArticleVO.setUrname(phuserService.findByPhid(a.getPhid()).getPhname());
+            AdminArticleVOList.add(adminArticleVO);
+        }
+        return ResultVOUtils.success(AdminArticleVOList,count);
+    }
+
+    /**
+     * 添加一篇文章
      * @param article
      * @return
      */
     @PostMapping(value = "/addArticle")
     public Article addArticle(Article article){
+        article.setAiestate(0);//初始文章状态
         return articleService.addOrUpdata(article);
     }
 
     /**
-     * 修改文章
+     * 修改某篇文章
      * @param article
      * @return
      */
@@ -61,7 +85,7 @@ public class ArticleController {
      * @param article
      * @return
      */
-    @PostMapping(value = "/findByAieid")
+    @GetMapping(value = "/findByAieid")
     public Article findByAieid(Article article){
         return articleService.findByAieid(article.getAieid());
     }
@@ -71,8 +95,9 @@ public class ArticleController {
      * @param article
      * @return
      */
-    @PostMapping(value = "/findByAiestate")
+    @GetMapping(value = "/findByAiestate")
     public ResultVO findByAiestate(Article article){
+//        logger.info(article.getAiestate()+"=============");
         int count=articleService.countByAiestate(article.getAiestate());
         List<Article> articleList=articleService.findByAiestate(article.getAiestate());
         List<AdminArticleVO> AdminArticleVOList=new ArrayList<>();
@@ -82,8 +107,8 @@ public class ArticleController {
             adminArticleVO.setAietitle(a.getAietitle());
             adminArticleVO.setAiesort(categoryService.findByCgyid(a.getCgyid()).getCgyname());
             adminArticleVO.setAietime(a.getAietime());
-            adminArticleVO.setAiestate(a.getAiestate());
-            adminArticleVO.setUrname(phuserService.findByPhid(a.getPhid()).getPhnum());
+            adminArticleVO.setAiestate(getAiestate(a.getAiestate()));
+            adminArticleVO.setUrname(phuserService.findByPhid(a.getPhid()).getPhname());
             AdminArticleVOList.add(adminArticleVO);
         }
         return ResultVOUtils.success(AdminArticleVOList,count);
@@ -94,20 +119,39 @@ public class ArticleController {
      * @param article
      * @return
      */
-    @PostMapping(value = "/findByPhidAndAiestate")
-    public ResultVO findByPhidAndAiestate(Article article){
+    @GetMapping(value = "/findByPhidAndAiestate")
+    public ResultVO findByPhidAndAiestate(Article article,@RequestParam("page") Integer page,@RequestParam("limit") Integer limit){
+
+        logger.info("当前第几页："+page);
+        logger.info("页面数大小："+limit);
+
+        PageRequest pageRequest=new PageRequest(page-1,limit);
+
         int count=articleService.countByPhidAndAiestate(article.getPhid(),article.getAiestate());
         List<Article> articleList=articleService.findByPhidAndAiestate(article.getPhid(),article.getAiestate());
-        List<PhuserArticleVO> PhuserArticleVOList=new ArrayList<>();
+        List<PhuserArticleVO> phuserArticleVOList=new ArrayList<>();
         for (Article a:articleList){
             PhuserArticleVO phuserArticleVO=new PhuserArticleVO();
             phuserArticleVO.setAieid(a.getAieid());
             phuserArticleVO.setAietitle(a.getAietitle());
             phuserArticleVO.setAiesort(categoryService.findByCgyid(a.getCgyid()).getCgyname());
             phuserArticleVO.setAietime(a.getAietime());
-            PhuserArticleVOList.add(phuserArticleVO);
+            phuserArticleVOList.add(phuserArticleVO);
         }
-        return ResultVOUtils.success(PhuserArticleVOList,count);
+        return ResultVOUtils.success(phuserArticleVOList,count);
+    }
+
+    public String getAiestate(int aiestate){
+        String str="状态出错";
+
+        if (aiestate > 0){
+            str="已通过";
+        }else if (aiestate < 0){
+            str="被驳回";
+        }else {
+            str="待审核";
+        }
+        return str;
     }
 
 //    @GetMapping("/articleList")
