@@ -3,11 +3,9 @@ package com.cf.bbackend.controller;
 import com.cf.bbackend.domain.Article;
 import com.cf.bbackend.service.ArticleService;
 import com.cf.bbackend.service.CategoryService;
-import com.cf.bbackend.service.ConsumerService;
 import com.cf.bbackend.service.PhuserService;
 import com.cf.bbackend.utils.ResultVOUtils;
 import com.cf.bbackend.vo.AdminArticleVO;
-import com.cf.bbackend.vo.ArticleVO;
 import com.cf.bbackend.vo.PhuserArticleVO;
 import com.cf.bbackend.vo.ResultVO;
 import org.slf4j.Logger;
@@ -16,7 +14,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.web.bind.annotation.*;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -66,6 +66,7 @@ public class ArticleController {
      */
     @PostMapping(value = "/addArticle")
     public Article addArticle(Article article){
+        article.setAietime(currentTime());//文章发布时间
         article.setAiestate(0);//初始文章状态
         return articleService.addOrUpdata(article);
     }
@@ -77,6 +78,8 @@ public class ArticleController {
      */
     @PostMapping(value = "/updataArticle")
     public Article updataArticle(Article article){
+        article.setAietime(currentTime());//修改文章发布时间
+        //article.setAiestate(0);//修改文章状态（前台传值吧）
         return articleService.addOrUpdata(article);
     }
 
@@ -141,7 +144,7 @@ public class ArticleController {
         return ResultVOUtils.success(phuserArticleVOList,count);
     }
 
-    public String getAiestate(int aiestate){
+    public String getAiestate(int aiestate){//文章状态处理
         String str="状态出错";
 
         if (aiestate > 0){
@@ -152,6 +155,12 @@ public class ArticleController {
             str="待审核";
         }
         return str;
+    }
+
+    public String currentTime(){//获取当前时间
+//        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");//设置日期格式
+        return df.format(new Date());// new Date()为获取当前系统时间
     }
 
 //    @GetMapping("/articleList")

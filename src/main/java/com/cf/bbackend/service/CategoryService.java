@@ -13,7 +13,7 @@ public interface CategoryService {
     Category findByCgyid(Integer cgyid);
 
     /** 查询所有. */
-    List<Category> categoryList();
+    List<Category> findAll();
 
     /** 添加/更新. */
     Category addOrUpdata(Category category);

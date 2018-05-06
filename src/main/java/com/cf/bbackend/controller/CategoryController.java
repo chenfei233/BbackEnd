@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 /**
  * 类别操作
  */
@@ -36,5 +38,12 @@ public class CategoryController {
     public Category findByCgyid(Category category){
         logger.info(" 类别-->查询 ");
         return categoryService.findByCgyid(category.getCgyid());
+    }
+
+    /** 查询显示全部 */
+    @GetMapping(value = "/findAll")
+    public List<Category> findAll(){
+        logger.info(" 类别-->查询-->显示全部 ");
+        return categoryService.findAll();
     }
 }
