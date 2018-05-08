@@ -1,11 +1,14 @@
 package com.cf.bbackend.controller;
 
 import com.cf.bbackend.domain.Article;
+import com.cf.bbackend.domain.Category;
+import com.cf.bbackend.domain.Phuser;
 import com.cf.bbackend.service.ArticleService;
 import com.cf.bbackend.service.CategoryService;
 import com.cf.bbackend.service.PhuserService;
 import com.cf.bbackend.utils.ResultVOUtils;
 import com.cf.bbackend.vo.AdminArticleVO;
+import com.cf.bbackend.vo.ArticleVO;
 import com.cf.bbackend.vo.PhuserArticleVO;
 import com.cf.bbackend.vo.ResultVO;
 import org.slf4j.Logger;
@@ -89,8 +92,26 @@ public class ArticleController {
      * @return
      */
     @GetMapping(value = "/findByAieid")
-    public Article findByAieid(Article article){
-        return articleService.findByAieid(article.getAieid());
+    public ArticleVO findByAieid(Article article){
+
+        logger.info("findByAieid     查询某篇文章");
+
+        Article aie = articleService.findByAieid(article.getAieid());
+        Phuser phuser = phuserService.findByPhid(aie.getPhid());
+        Category category = categoryService.findByCgyid(aie.getCgyid());
+
+        ArticleVO articleVO=new ArticleVO();
+        articleVO.setAieid(aie.getAieid());
+        articleVO.setAietitle(aie.getAietitle());
+        articleVO.setAieimg(aie.getAieimg());
+        articleVO.setAiecontent(aie.getAiecontent());
+        articleVO.setAietime(aie.getAietime());
+        articleVO.setCgyname(category.getCgyname());
+        articleVO.setCgyicon(category.getCgyicon());
+        articleVO.setPhname(phuser.getPhname());
+        articleVO.setPhicon(phuser.getPhicon());
+
+        return articleVO;
     }
 
     /**
@@ -115,6 +136,15 @@ public class ArticleController {
             AdminArticleVOList.add(adminArticleVO);
         }
         return ResultVOUtils.success(AdminArticleVOList,count);
+    }
+
+    /**
+     * 删除文章
+     * @param article
+     */
+    @GetMapping(value = "/deleteByAieid")
+    public void deleteByAieid(Article article){
+        articleService.deleteByAieid(article.getAieid());
     }
 
     /**
@@ -144,7 +174,23 @@ public class ArticleController {
         return ResultVOUtils.success(phuserArticleVOList,count);
     }
 
-    public String getAiestate(int aiestate){//文章状态处理
+//    /**
+//     * 查询某文章详细信息
+//     * @param article
+//     * @return
+//     */
+//    @GetMapping(value = "/findOne")
+//    public ResultVO findOne(Article article){
+//        return ResultVOUtils.success(phuserArticleVOList,count);
+//    }
+
+
+    /**
+     * 文章状态处理
+     * @param aiestate
+     * @return
+     */
+    public String getAiestate(int aiestate){
         String str="状态出错";
 
         if (aiestate > 0){
@@ -154,36 +200,18 @@ public class ArticleController {
         }else {
             str="待审核";
         }
+
         return str;
     }
 
-    public String currentTime(){//获取当前时间
+    /**
+     * 获取当前时间
+     * @return
+     */
+    public String currentTime(){
 //        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");//设置日期格式
         return df.format(new Date());// new Date()为获取当前系统时间
     }
 
-//    @GetMapping("/articleList")
-//    public ResultVO list(){
-//        List<Article> articleList=articleService.userFindAll();
-//        List<ArticleVO> articleVOList=new ArrayList<>();
-//        for (Article article:articleList){
-//            ArticleVO articleVO=new ArticleVO();
-//            articleVO.setAieid(article.getAieid());
-//            articleVO.setAietitle(article.getAietitle());
-//            articleVO.setAiesort(categoryService.findByCgyid(Integer.parseInt(article.getCgyid())).getCgyname());
-//            articleVO.setAietime(article.getAietime());
-//            articleVO.setAiestate(article.getAiestate());
-//            articleVO.setUrname(consumerService.findByUrid(Integer.parseInt(article.getUserid())).getUrname());
-//            articleVOList.add(articleVO);
-//        }
-//        ResultVO resultVO=new ResultVO();
-//        resultVO.setCode(0);
-//        resultVO.setCount(1000);
-//        resultVO.setMsg("成功");
-//        resultVO.setData(articleVOList);
-//        resultVO.setData(Arrays.asList(articleRepository.findAll()));
-//        resultVO.setData(articleService.userFindAll());
-//        return ResultVOUtils.success(articleVOList,100);
-//    }
 }

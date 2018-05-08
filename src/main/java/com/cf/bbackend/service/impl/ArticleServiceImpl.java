@@ -20,6 +20,11 @@ public class ArticleServiceImpl implements ArticleService {
     private ArticleRepository articleRepository;
 
     @Override
+    public void deleteByAieid(Integer aieId) {
+        articleRepository.deleteById(aieId);
+    }
+
+    @Override
     public List<Article> findAll() {
         return articleRepository.findAll();
     }

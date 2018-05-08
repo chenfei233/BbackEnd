@@ -12,7 +12,8 @@ import java.util.List;
  */
 public interface ArticleRepository extends JpaRepository<Article,Integer> {
 
-//    int c();
+    /** 删除文章 */
+    void deleteByAieid(Integer aieId);
 
     /** 根据ID查询 */
     Article findByAieid(Integer aieId);

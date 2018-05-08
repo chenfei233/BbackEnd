@@ -4,7 +4,7 @@ import lombok.Data;
 
 /**
  * 请求返回
- *   管理员页面的文章对象信息
+ *   文章对象详细信息
  */
 @Data
 public class ArticleVO {
@@ -15,15 +15,24 @@ public class ArticleVO {
     /** 文章标题. */
     private String aietitle;
 
-    /** 文章分类. */
-    private String aiesort;
+    /** 首页图片. */
+    private String aieimg;
+
+    /** 文章内容. */
+    private String aiecontent;
+
+    /** 文章分类名称. */
+    private String cgyname;
+
+    /** 文章分类图片路径. */
+    private String cgyicon;
 
     /** 发布时间. */
     private String aietime;
 
-    /** 文章状态. */
-    private Integer aiestate;
+    /** 发布用户昵称. */
+    private String phname;
 
-    /** 发布用户. */
-    private String urname;
+    /** 发布用户头像. */
+    private String phicon;
 }

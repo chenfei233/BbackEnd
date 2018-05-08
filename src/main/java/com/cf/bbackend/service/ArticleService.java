@@ -10,6 +10,9 @@ import java.util.List;
  */
 public interface ArticleService {
 
+    /** 删除某篇文章 */
+    void deleteByAieid(Integer aieId);
+
     /** 查询全部文章 */
     List<Article> findAll();
 

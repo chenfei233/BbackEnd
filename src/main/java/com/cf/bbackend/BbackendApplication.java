@@ -25,7 +25,7 @@ public class BbackendApplication {
 		factory.setMaxFileSize("10240KB"); // KB,MB
 		/// 设置总上传数据总大小
 		factory.setMaxRequestSize("102400KB");
-		factory.setLocation("D:\\image");
+		factory.setLocation("D:/Bibased/BforeEnd/images/upload");
 		return factory.createMultipartConfig();
 	}
 }
