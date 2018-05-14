@@ -3,6 +3,7 @@ package com.cf.bbackend.service.impl;
 import com.cf.bbackend.domain.Article;
 import com.cf.bbackend.repository.ArticleRepository;
 import com.cf.bbackend.service.ArticleService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -61,8 +62,26 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     @Override
+    public Page<Article> findByPhidAndAiestate(Integer Phid, Integer Aiestate,Pageable pageable) {
+        Page<Article> pageArticle=articleRepository.findByPhidAndAiestate(Phid,Aiestate,pageable);
+        System.out.println("分页测试0："+pageArticle.getContent());
+        System.out.println("分页测试1："+pageArticle.getTotalElements());
+        return articleRepository.findByPhidAndAiestate(Phid,Aiestate,pageable);
+//        return articlePage;
+//        List<Article> orderDTOList = convert(articlePage.getContent());
+//
+//        return new PageImpl<>(orderDTOList, pageable, orderMasterPage.getTotalElements());
+    }
+
+    @Override
     public int countByPhidAndAiestate(Integer Phid, Integer Aiestate) {
         return articleRepository.countByPhidAndAiestate(Phid,Aiestate);
+    }
+
+    public Article convert(Article article) {
+        Article art = new Article();
+        BeanUtils.copyProperties(article, art);
+        return art;
     }
 
 }

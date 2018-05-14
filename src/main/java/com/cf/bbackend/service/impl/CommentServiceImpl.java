@@ -6,6 +6,8 @@ import com.cf.bbackend.service.CommentaryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * 评论表
  */
@@ -21,7 +23,7 @@ public class CommentServiceImpl  implements CommentaryService {
     }
 
     @Override
-    public Commentary findByAieid(Integer Aieid) {
+    public List<Commentary> findByAieid(Integer Aieid) {
         return commentRepository.findByAieid(Aieid);
     }
 

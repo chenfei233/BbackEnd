@@ -31,8 +31,11 @@ public interface ArticleService {
     /** 查询某状态的全部文章数目 */
     int countByAiestate(Integer Aiestate);
 
-    /** 查询某发布用户的某个状态的文章(分页) */
+    /** 查询某发布用户的某个状态的文章 */
     List<Article> findByPhidAndAiestate(Integer Phid,Integer Aiestate);
+
+    /** 查询某发布用户的某个状态的文章(分页) */
+    Page<Article> findByPhidAndAiestate(Integer Phid, Integer Aiestate,Pageable pageable);
 
     /** 查询某发布用户的某个状态的文章数目 */
     int countByPhidAndAiestate(Integer Phid,Integer Aiestate);
@@ -48,5 +51,6 @@ public interface ArticleService {
 
 //    /** 管理员查询待审核的 */
 //    List<Article> findByAll();
+
 
 }

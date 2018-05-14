@@ -3,6 +3,7 @@ package com.cf.bbackend.controller;
 import com.cf.bbackend.domain.Article;
 import com.cf.bbackend.domain.Category;
 import com.cf.bbackend.domain.Phuser;
+import com.cf.bbackend.repository.ArticleRepository;
 import com.cf.bbackend.service.ArticleService;
 import com.cf.bbackend.service.CategoryService;
 import com.cf.bbackend.service.PhuserService;
@@ -14,6 +15,7 @@ import com.cf.bbackend.vo.ResultVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.web.bind.annotation.*;
 
@@ -48,7 +50,7 @@ public class ArticleController {
     public ResultVO<Article> findAll(){
         int count=articleService.countAll();
         List<Article> articleList=articleService.findAll();
-        List<AdminArticleVO> AdminArticleVOList=new ArrayList<>();
+        List<AdminArticleVO> adminArticleVOList=new ArrayList<>();
         for (Article a:articleList){
             AdminArticleVO adminArticleVO=new AdminArticleVO();
             adminArticleVO.setAieid(a.getAieid());
@@ -57,9 +59,9 @@ public class ArticleController {
             adminArticleVO.setAietime(a.getAietime());
             adminArticleVO.setAiestate(getAiestate(a.getAiestate()));
             adminArticleVO.setUrname(phuserService.findByPhid(a.getPhid()).getPhname());
-            AdminArticleVOList.add(adminArticleVO);
+            adminArticleVOList.add(adminArticleVO);
         }
-        return ResultVOUtils.success(AdminArticleVOList,count);
+        return ResultVOUtils.success(adminArticleVOList,count);
     }
 
     /**
@@ -75,15 +77,30 @@ public class ArticleController {
     }
 
     /**
-     * 修改某篇文章
+     * 修改某篇文章信息
      * @param article
-     * @return
+     * @return   ###用不到了吧
      */
     @PostMapping(value = "/updataArticle")
     public Article updataArticle(Article article){
         article.setAietime(currentTime());//修改文章发布时间
         //article.setAiestate(0);//修改文章状态（前台传值吧）
         return articleService.addOrUpdata(article);
+    }
+
+    /**
+     * 修改某篇文章状态
+     * @param article
+     * @return
+     */
+    @PostMapping(value = "/updataArticleAiestate")
+    public Article updataArticleAiestate(Article article){
+        logger.info("修改某篇文章状态");
+        Article art=new Article();
+        art=articleService.findByAieid(article.getAieid());
+        art.setAiestate(article.getAiestate());
+        return articleService.addOrUpdata(art);
+//        articleService.updateAiestate(article.getAiestate(),article.getAieid());
     }
 
     /**
@@ -120,8 +137,9 @@ public class ArticleController {
      * @return
      */
     @GetMapping(value = "/findByAiestate")
-    public ResultVO findByAiestate(Article article){
-//        logger.info(article.getAiestate()+"=============");
+    public ResultVO findByAiestate(Article article,@RequestParam("page") Integer page,@RequestParam("limit") Integer limit){
+        logger.info(article.getAiestate()+"=============");
+
         int count=articleService.countByAiestate(article.getAiestate());
         List<Article> articleList=articleService.findByAiestate(article.getAiestate());
         List<AdminArticleVO> AdminArticleVOList=new ArrayList<>();
@@ -158,10 +176,18 @@ public class ArticleController {
         logger.info("当前第几页："+page);
         logger.info("页面数大小："+limit);
 
-        PageRequest pageRequest=new PageRequest(page-1,limit);
+        PageRequest pageRequest=new PageRequest(page,limit);
 
         int count=articleService.countByPhidAndAiestate(article.getPhid(),article.getAiestate());
         List<Article> articleList=articleService.findByPhidAndAiestate(article.getPhid(),article.getAiestate());
+
+//        logger.info("当前第几页article.getAiestate()："+article.getPhid());
+//        logger.info("页面数大小article.getAiestate()："+article.getAiestate());
+
+//        Page<Article> articleListText=articleService.findByPhidAndAiestate(article.getPhid(),article.getAiestate(),pageRequest);
+//        System.out.println("分页测试0："+articleListText.getContent());
+//        System.out.println("分页测试1："+articleListText.getTotalElements());
+
         List<PhuserArticleVO> phuserArticleVOList=new ArrayList<>();
         for (Article a:articleList){
             PhuserArticleVO phuserArticleVO=new PhuserArticleVO();
