@@ -16,6 +16,11 @@ public class CollectServiceImpl implements CollectService {
     private CollectRepository collectRepository;
 
     @Override
+    public int countByAieid(Integer Aieid) {
+        return collectRepository.countByAieid(Aieid);
+    }
+
+    @Override
     public Collect findByOyid(Integer Oyid) {
         return collectRepository.findByOyid(Oyid);
     }

@@ -4,14 +4,9 @@ import com.cf.bbackend.domain.Article;
 import com.cf.bbackend.domain.Category;
 import com.cf.bbackend.domain.Phuser;
 import com.cf.bbackend.repository.ArticleRepository;
-import com.cf.bbackend.service.ArticleService;
-import com.cf.bbackend.service.CategoryService;
-import com.cf.bbackend.service.PhuserService;
+import com.cf.bbackend.service.*;
 import com.cf.bbackend.utils.ResultVOUtils;
-import com.cf.bbackend.vo.AdminArticleVO;
-import com.cf.bbackend.vo.ArticleVO;
-import com.cf.bbackend.vo.PhuserArticleVO;
-import com.cf.bbackend.vo.ResultVO;
+import com.cf.bbackend.vo.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,27 +37,11 @@ public class ArticleController {
     @Autowired
     private PhuserService phuserService;
 
-    /**
-     * 管理员 查询全部文章
-     * @return
-     */
-    @GetMapping(value = "/findAll")
-    public ResultVO<Article> findAll(){
-        int count=articleService.countAll();
-        List<Article> articleList=articleService.findAll();
-        List<AdminArticleVO> adminArticleVOList=new ArrayList<>();
-        for (Article a:articleList){
-            AdminArticleVO adminArticleVO=new AdminArticleVO();
-            adminArticleVO.setAieid(a.getAieid());
-            adminArticleVO.setAietitle(a.getAietitle());
-            adminArticleVO.setAiesort(categoryService.findByCgyid(a.getCgyid()).getCgyname());
-            adminArticleVO.setAietime(a.getAietime());
-            adminArticleVO.setAiestate(getAiestate(a.getAiestate()));
-            adminArticleVO.setUrname(phuserService.findByPhid(a.getPhid()).getPhname());
-            adminArticleVOList.add(adminArticleVO);
-        }
-        return ResultVOUtils.success(adminArticleVOList,count);
-    }
+    @Autowired
+    private CommentaryService commentaryService;
+
+    @Autowired
+    private CollectService collectService;
 
     /**
      * 添加一篇文章
@@ -74,6 +53,15 @@ public class ArticleController {
         article.setAietime(currentTime());//文章发布时间
         article.setAiestate(0);//初始文章状态
         return articleService.addOrUpdata(article);
+    }
+
+    /**
+     * 删除文章
+     * @param article
+     */
+    @GetMapping(value = "/deleteByAieid")
+    public void deleteByAieid(Article article){
+        articleService.deleteByAieid(article.getAieid());
     }
 
     /**
@@ -132,6 +120,28 @@ public class ArticleController {
     }
 
     /**
+     * 管理员 查询全部文章
+     * @return
+     */
+    @GetMapping(value = "/findAll")
+    public ResultVO<Article> findAll(){
+        int count=articleService.countAll();
+        List<Article> articleList=articleService.findAll();
+        List<AdminArticleVO> adminArticleVOList=new ArrayList<>();
+        for (Article a:articleList){
+            AdminArticleVO adminArticleVO=new AdminArticleVO();
+            adminArticleVO.setAieid(a.getAieid());
+            adminArticleVO.setAietitle(a.getAietitle());
+            adminArticleVO.setAiesort(categoryService.findByCgyid(a.getCgyid()).getCgyname());
+            adminArticleVO.setAietime(a.getAietime());
+            adminArticleVO.setAiestate(getAiestate(a.getAiestate()));
+            adminArticleVO.setUrname(phuserService.findByPhid(a.getPhid()).getPhname());
+            adminArticleVOList.add(adminArticleVO);
+        }
+        return ResultVOUtils.success(adminArticleVOList,count);
+    }
+
+    /**
      * 管理员 查询某状态的全部文章
      * @param article
      * @return
@@ -156,14 +166,6 @@ public class ArticleController {
         return ResultVOUtils.success(AdminArticleVOList,count);
     }
 
-    /**
-     * 删除文章
-     * @param article
-     */
-    @GetMapping(value = "/deleteByAieid")
-    public void deleteByAieid(Article article){
-        articleService.deleteByAieid(article.getAieid());
-    }
 
     /**
      * 某发布用户下某状态全部文章
@@ -200,16 +202,33 @@ public class ArticleController {
         return ResultVOUtils.success(phuserArticleVOList,count);
     }
 
-//    /**
-//     * 查询某文章详细信息
-//     * @param article
-//     * @return
-//     */
-//    @GetMapping(value = "/findOne")
-//    public ResultVO findOne(Article article){
-//        return ResultVOUtils.success(phuserArticleVOList,count);
-//    }
+    /**
+     * 系统首页文章的请求
+     * @param article
+     * @return
+     */
+    @GetMapping(value = "/indexArticle")
+    public ResultVO indexArticle(Article article){
+        article.setAiestate(1);
+        int count=articleService.countByAiestate(article.getAiestate());
+        List<Article> articleList=articleService.findByAiestate(article.getAiestate());
+        List<OyuserArticleVO> oyuserArticleVOList=new ArrayList<>();
+        for (Article a:articleList){
+            OyuserArticleVO oyuserArticleVO=new OyuserArticleVO();
+            Category c=categoryService.findByCgyid(a.getCgyid());
 
+            oyuserArticleVO.setAieid(a.getAieid());
+            oyuserArticleVO.setAieimg(a.getAieimg());
+            oyuserArticleVO.setAietitle(a.getAietitle());
+            oyuserArticleVO.setAietime(a.getAietime());
+            oyuserArticleVO.setCgyicon(c.getCgyicon());
+            oyuserArticleVO.setCgyname(c.getCgyname());
+            oyuserArticleVO.setCmtnum(commentaryService.countByAieid(a.getAieid()));//评论数
+            oyuserArticleVO.setCltnum(collectService.countByAieid(a.getAieid()));//收藏数
+            oyuserArticleVOList.add(oyuserArticleVO);
+        }
+        return ResultVOUtils.success(oyuserArticleVOList,count);
+    }
 
     /**
      * 文章状态处理

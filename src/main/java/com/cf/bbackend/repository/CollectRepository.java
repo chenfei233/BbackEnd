@@ -8,6 +8,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
  */
 public interface CollectRepository extends JpaRepository<Collect,Integer> {
 
+    /** 该文章下的收藏数目 */
+    int countByAieid(Integer Aieid);
+
     /** 根据用户id查询收藏 */
     Collect findByOyid(Integer Oyid);
 

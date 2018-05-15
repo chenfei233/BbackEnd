@@ -64,8 +64,8 @@ public class CommentaryController {
             commentaryVO.setCmtcontent(c.getCmtcontent());
             commentaryVO.setCmttime(c.getCmttime());
 //            logger.info("oyuser.getOyname():::"+oyuser.getOyname());
-//            commentaryVO.setOyname(oyuser.getOyname());
-//            commentaryVO.setOyicon(oyuser.getOyicon());
+            commentaryVO.setOyname(oyuser.getOyname());
+            commentaryVO.setOyicon(oyuser.getOyicon());
             commentaryVOList.add(commentaryVO);
         }
         return ResultVOUtils.success(commentaryVOList,count);

@@ -20,6 +20,12 @@ public class OyuserArticleVO {
     /** 发布时间. */
     private String aietime;
 
+    /** 文章分类名称. */
+    private String cgyname;
+
+    /** 文章分类图片路径. */
+    private String cgyicon;
+
     /** 评论数. */
     private int cmtnum;
 

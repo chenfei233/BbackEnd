@@ -7,6 +7,9 @@ import com.cf.bbackend.domain.Collect;
  */
 public interface CollectService {
 
+    /** 查询该文章下的收藏数目 */
+    int countByAieid(Integer Aieid);
+
     /** 根据用户id查询收藏 */
     Collect findByOyid(Integer Oyid);
 
