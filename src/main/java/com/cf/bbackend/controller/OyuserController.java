@@ -49,15 +49,51 @@ public class OyuserController {
     }
 
     /**
-     * 普通用户更新个人信息
+     * 普通用户更新个人头像信息
      * @param oyuser
      * @return
      */
-    @PostMapping(value = "/updataOyuser")
-    public Oyuser updataOyuser(Oyuser oyuser){
-        return oyuserService.addOrUpdata(oyuser);
+    @PostMapping(value = "/updataOyuserIcon")
+    public Oyuser updataOyuserIcon(Oyuser oyuser){
+        Oyuser o=oyuserService.findByOyid(oyuser.getOyid());
+        o.setOyicon(oyuser.getOyicon());
+        return oyuserService.addOrUpdata(o);
     }
 
+    /**
+     * 普通用户更新个人信息(昵称、简介、邮箱)
+     * @param oyuser
+     * @return
+     */
+    @PostMapping(value = "/updataOyuserInfo")
+    public Oyuser updataOyuserInfo(Oyuser oyuser){
+        Oyuser o=oyuserService.findByOyid(oyuser.getOyid());
+        o.setOyname(oyuser.getOyname());
+        o.setOyemail(oyuser.getOyemail());
+        o.setOybrief(oyuser.getOybrief());
+        return oyuserService.addOrUpdata(o);
+    }
 
+    /**
+     * 根据id、密码查询
+     * @param oyuser
+     * @return
+     */
+    @PostMapping(value = "/findByOyidAndAndOypswd")
+    public Oyuser findByOyidAndAndOypswd(Oyuser oyuser){
+        return oyuserService.findByOyidAndAndOypswd(oyuser.getOyid(),oyuser.getOypswd());
+    }
+
+    /**
+     * 普通用户更新个人密码信息
+     * @param oyuser
+     * @return
+     */
+    @PostMapping(value = "/updataOyuserPswd")
+    public Oyuser updataOyuserPswd(Oyuser oyuser){
+        Oyuser o=oyuserService.findByOyid(oyuser.getOyid());
+        o.setOypswd(oyuser.getOypswd());
+        return oyuserService.addOrUpdata(o);
+    }
 
 }

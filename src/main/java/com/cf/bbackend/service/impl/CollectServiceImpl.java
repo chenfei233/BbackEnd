@@ -6,6 +6,8 @@ import com.cf.bbackend.service.CollectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * 收藏
  */
@@ -21,12 +23,22 @@ public class CollectServiceImpl implements CollectService {
     }
 
     @Override
-    public Collect findByOyid(Integer Oyid) {
+    public List<Collect> findByOyid(Integer Oyid) {
         return collectRepository.findByOyid(Oyid);
     }
 
     @Override
-    public void deleteByCltid(Integer Cltid) {
-        collectRepository.deleteById(Cltid);
+    public int countByOyid(Integer Oyid) {
+        return collectRepository.countByAieid(Oyid);
+    }
+
+    @Override
+    public void deleteByAieid(Integer Aieid) {
+        collectRepository.countByAieid(Aieid);
+    }
+
+    @Override
+    public void deleteByOyidAndAieid(Integer Oyid, Integer Aieid) {
+        collectRepository.deleteByOyidAndAieid(Oyid,Aieid);
     }
 }

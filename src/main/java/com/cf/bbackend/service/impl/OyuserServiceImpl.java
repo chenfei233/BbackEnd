@@ -31,6 +31,11 @@ public class OyuserServiceImpl implements OyuserService{
     }
 
     @Override
+    public Oyuser findByOyidAndAndOypswd(Integer Oyid, String Oypswd) {
+        return oyuserRepository.findByOyidAndAndOypswd(Oyid,Oypswd);
+    }
+
+    @Override
     public Oyuser addOrUpdata(Oyuser oyuser) {
         return oyuserRepository.save(oyuser);
     }

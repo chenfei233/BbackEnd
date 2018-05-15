@@ -16,6 +16,9 @@ public interface OyuserService {
     /** 匹配账号、密码 */
     Oyuser findByOynumAndOypswd(String Oynum,String Oypswd);
 
+    /** 根据id、密码查询 */
+    Oyuser findByOyidAndAndOypswd(Integer Oyid,String Oypswd);
+
     /** 添加更新用户信息 */
     Oyuser addOrUpdata(Oyuser oyuser);
     

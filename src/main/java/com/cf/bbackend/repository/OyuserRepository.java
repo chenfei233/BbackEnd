@@ -14,4 +14,7 @@ public interface OyuserRepository extends JpaRepository<Oyuser, Integer> {
     /** 匹配账号、密码 */
     Oyuser findByOynumAndOypswd(String Oynum,String Oypswd);
 
+    /** 根据id、密码查询 */
+    Oyuser findByOyidAndAndOypswd(Integer Oyid,String Oypswd);
+
 }
