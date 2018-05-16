@@ -10,6 +10,9 @@ import java.util.List;
  */
 public interface CollectRepository extends JpaRepository<Collect,Integer> {
 
+//    /** 根据id删除收藏 */
+//    void deleteByCltid(Integer Cltid);
+
     /** 该文章下的收藏数目 */
     int countByAieid(Integer Aieid);
 
@@ -24,5 +27,8 @@ public interface CollectRepository extends JpaRepository<Collect,Integer> {
 
     /** 根据用户id、文章id删除收藏 */
     void deleteByOyidAndAieid(Integer Oyid,Integer Aieid);
+
+    /** 查询该用户是否收藏此文章 */
+    List<Collect> findByOyidAndAieid(Integer Oyid,Integer Aieid);
 
 }

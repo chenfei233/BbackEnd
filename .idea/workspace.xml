@@ -2,22 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7646840a-a13d-414e-bee0-94c086cd902a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/CollectController.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/controller/OyuserController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/repository/CollectRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/CollectService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/impl/CollectServiceImpl.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/repository/OyuserRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/repository/OyuserRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/OyuserService.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/OyuserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/impl/OyuserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/impl/OyuserServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/controller/AdministratorsController.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/controller/AdministratorsController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/controller/CollectController.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/controller/CollectController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/controller/PhuserController.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/controller/PhuserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/domain/Article.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/domain/Article.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/repository/AdministratorsRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/repository/AdministratorsRepository.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/repository/ArticleRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/repository/ArticleRepository.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/repository/CollectRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/repository/CollectRepository.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/repository/PhuserRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/repository/PhuserRepository.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/AdministratorsService.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/AdministratorsService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/CollectService.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/CollectService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/PhuserService.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/PhuserService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/impl/AdministratorsServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/impl/AdministratorsServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/impl/CollectServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/impl/CollectServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/impl/PhuserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/impl/PhuserServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/OyuserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/OyuserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/AdministratorsController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/AdministratorsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/CollectController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/CollectController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/PhuserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/PhuserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Article.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Article.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/AdministratorsRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/AdministratorsRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/ArticleRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/ArticleRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/CollectRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/CollectRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/OyuserRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/OyuserRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/PhuserRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/PhuserRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/AdministratorsService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/AdministratorsService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/CollectService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/CollectService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/OyuserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/OyuserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/PhuserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/PhuserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/AdministratorsServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/AdministratorsServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/CollectServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/CollectServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/OyuserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/OyuserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/PhuserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/PhuserServiceImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,56 +59,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ArticleController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/ArticleController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="61" column="41" lean-forward="true" selection-start-line="57" selection-start-column="4" selection-end-line="61" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="docComment;method#addArticle#0;class#ArticleController#0" expanded="false" />
-                <element signature="method#addArticle#0;class#ArticleController#0" expanded="false" />
-                <element signature="docComment;method#deleteByAieid#0;class#ArticleController#0" expanded="false" />
-                <element signature="docComment;method#updataArticle#0;class#ArticleController#0" expanded="false" />
-                <element signature="method#updataArticle#0;class#ArticleController#0" expanded="false" />
-                <element signature="docComment;method#updataArticleAiestate#0;class#ArticleController#0" expanded="false" />
-                <element signature="method#updataArticleAiestate#0;class#ArticleController#0" expanded="false" />
-                <element signature="method#findByAieid#0;class#ArticleController#0" expanded="false" />
-                <element signature="method#findAll#0;class#ArticleController#0" expanded="false" />
-                <element signature="docComment;method#findByAiestate#0;class#ArticleController#0" expanded="false" />
-                <element signature="method#findByAiestate#0;class#ArticleController#0" expanded="false" />
-                <element signature="docComment;method#findByPhidAndAiestate#0;class#ArticleController#0" expanded="false" />
-                <element signature="method#findByPhidAndAiestate#0;class#ArticleController#0" expanded="false" />
-                <element signature="docComment;method#getAiestate#0;class#ArticleController#0" expanded="false" />
-                <element signature="method#getAiestate#0;class#ArticleController#0" expanded="false" />
-                <element signature="docComment;method#currentTime#0;class#ArticleController#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CollectService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/CollectService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="21" column="38" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="21" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CollectController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/CollectController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+            <state relative-caret-position="222">
+              <caret line="51" column="72" lean-forward="false" selection-start-line="51" selection-start-column="72" selection-end-line="51" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#deleteByAieid#0;class#CollectController#0" expanded="false" />
                 <element signature="docComment;method#deleteByOyidAndAieid#0;class#CollectController#0" expanded="false" />
-                <element signature="method#deleteByOyidAndAieid#0;class#CollectController#0" expanded="false" />
                 <element signature="docComment;method#collectArticle#0;class#CollectController#0" expanded="false" />
                 <element signature="method#collectArticle#0;class#CollectController#0" expanded="false" />
               </folding>
@@ -134,38 +106,27 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/ManagerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/ConsumerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Administrators.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/PhuserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Oyuser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Phuser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/CommentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/CommentRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/PhuserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/PhuserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Collect.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/CollectServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/AdministratorsRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Article.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Comment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Commentary.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/AdministratorsService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/AdministratorsServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/utils/ResultVOUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/vo/PhuserArticleVO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/vo/AdminArticleVO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/FileUploadControllerTwo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/FileUpLoadControllerOne.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/PhuserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/CategoryService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/CategoryServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/CategoryController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/vo/ArticleVO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/BbackendApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/FileUploadController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/AdministratorsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/CorsFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/ArticleRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/ArticleService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/ArticleServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/CommentaryService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/CommentServiceImpl.java" />
@@ -177,10 +138,21 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/OyuserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/OyuserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/OyuserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/AdministratorsRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/AdministratorsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/AdministratorsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/AdministratorsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/PhuserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/PhuserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/PhuserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/PhuserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/OyuserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/CollectRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/CollectService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Article.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/CollectServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/CollectService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/ArticleService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/ArticleRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/CollectRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/CollectController.java" />
       </list>
     </option>
@@ -212,7 +184,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -260,25 +233,6 @@
               <item name="BbackEnd" type="b2602c69:ProjectViewProjectNode" />
               <item name="BbackEnd" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BbackEnd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BbackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BbackEnd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BbackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -300,8 +254,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -626,6 +579,7 @@
       <workItem from="1526355291681" duration="10464000" />
       <workItem from="1526377506308" duration="3601000" />
       <workItem from="1526395569019" duration="8908000" />
+      <workItem from="1526436224369" duration="21631000" />
     </task>
     <servers />
   </component>
@@ -662,7 +616,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="365258000" />
+    <option name="totallyTimeSpent" value="386889000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -676,8 +630,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61490685" sideWeight="0.5058565" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3121118" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24378882" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -713,24 +667,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/ManagerRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/PhuserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/FileUpLoadControllerOne.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/FileUploadControllerTwo.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/ManagerController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/ConsumerRepository.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/CategoryRepository.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -742,13 +678,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/ConsumerServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/ConsumerController.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/cf/bbackend/repository/ConsumerRepositoryTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/AdministratorsRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="8" column="47" lean-forward="true" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/vo/AdminArticleVO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
@@ -809,39 +738,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Administrators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/AdministratorsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="35" column="28" lean-forward="true" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/PhuserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Phuser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -857,7 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -866,21 +765,6 @@
         <state relative-caret-position="402">
           <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Article.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/CommentaryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -946,9 +830,105 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/AdministratorsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="23" column="69" lean-forward="false" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/AdministratorsRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Administrators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/PhuserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="19" column="62" lean-forward="false" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/PhuserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="34" column="69" lean-forward="true" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/PhuserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="20" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/AdministratorsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="98" column="56" lean-forward="true" selection-start-line="98" selection-start-column="56" selection-end-line="98" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Phuser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Oyuser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/OyuserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/CommentaryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="15" column="46" lean-forward="false" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/OyuserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="22" column="38" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/OyuserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
+        <state relative-caret-position="377">
           <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
           <folding>
             <element signature="method#findByOynumAndOypswd#0;class#OyuserServiceImpl#0" expanded="false" />
@@ -957,68 +937,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/OyuserService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/PhuserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Oyuser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/OyuserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/OyuserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="77" column="16" lean-forward="true" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/ArticleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="46" column="52" lean-forward="true" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/ArticleRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/ArticleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1158">
-          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        <state relative-caret-position="70">
+          <caret line="98" column="20" lean-forward="true" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/ArticleController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="61" column="41" lean-forward="true" selection-start-line="57" selection-start-column="4" selection-end-line="61" selection-end-column="41" />
+        <state relative-caret-position="13">
+          <caret line="31" column="20" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;method#addArticle#0;class#ArticleController#0" expanded="false" />
             <element signature="method#addArticle#0;class#ArticleController#0" expanded="false" />
             <element signature="docComment;method#deleteByAieid#0;class#ArticleController#0" expanded="false" />
@@ -1039,41 +970,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/CollectRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/OyuserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="22" column="38" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="38" />
+        <state relative-caret-position="225">
+          <caret line="44" column="14" lean-forward="true" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/CollectServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Article.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="250">
+          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Collect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/AdministratorsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20">
+          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/ArticleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/CollectService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="21" column="38" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="21" selection-end-column="38" />
+        <state relative-caret-position="250">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/CollectRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/ArticleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/ArticleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/CollectServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="method#deleteByOyidAndAieid#0;class#CollectServiceImpl#0" expanded="false" />
+            <element signature="method#findByOyidAndAieid#0;class#CollectServiceImpl#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/CollectController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+        <state relative-caret-position="222">
+          <caret line="51" column="72" lean-forward="false" selection-start-line="51" selection-start-column="72" selection-end-line="51" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#deleteByAieid#0;class#CollectController#0" expanded="false" />
             <element signature="docComment;method#deleteByOyidAndAieid#0;class#CollectController#0" expanded="false" />
-            <element signature="method#deleteByOyidAndAieid#0;class#CollectController#0" expanded="false" />
             <element signature="docComment;method#collectArticle#0;class#CollectController#0" expanded="false" />
             <element signature="method#collectArticle#0;class#CollectController#0" expanded="false" />
           </folding>

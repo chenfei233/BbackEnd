@@ -29,4 +29,14 @@ public class AdministratorsServiceImpl implements AdministratorsService {
     public Administrators addOrUpdata(Administrators administrators) {
         return administratorsRepository.save(administrators);
     }
+
+    @Override
+    public Administrators findByAdmid(Integer Admid) {
+        return administratorsRepository.findByAdmid(Admid);
+    }
+
+    @Override
+    public Administrators findByAdmidAndAdmpwd(Integer Admid, String Admpwd) {
+        return administratorsRepository.findByAdmidAndAdmpwd(Admid,Admpwd);
+    }
 }

@@ -58,4 +58,52 @@ public class PhuserController {
         return phuserService.addOrUpdata(phuser);
     }
 
+    /**
+     * 更新个人头像信息
+     * @param phuser
+     * @return
+     */
+    @PostMapping(value = "/updataPhuserIcon")
+    public Phuser updataPhuserIcon(Phuser phuser){
+        Phuser p=phuserService.findByPhid(phuser.getPhid());
+        p.setPhicon(phuser.getPhicon());
+        return phuserService.addOrUpdata(p);
+    }
+
+    /**
+     * 普通用户更新个人信息(昵称、简介、邮箱)
+     * @param phuser
+     * @return
+     */
+    @PostMapping(value = "/updataPhuserInfo")
+    public Phuser updataPhuserInfo(Phuser phuser){
+        Phuser p=phuserService.findByPhid(phuser.getPhid());
+        p.setPhname(phuser.getPhname());
+        p.setPhemail(phuser.getPhemail());
+        p.setPhbrief(phuser.getPhbrief());
+        return phuserService.addOrUpdata(p);
+    }
+
+    /**
+     * 根据id、密码查询
+     * @param phuser
+     * @return
+     */
+    @PostMapping(value = "/findByPhidAndAndPhpswd")
+    public Phuser findByPhidAndAndPhpswd(Phuser phuser){
+        return phuserService.findByPhidAndAndPhpswd(phuser.getPhid(),phuser.getPhpswd());
+    }
+
+    /**
+     * 用户更新密码
+     * @param phuser
+     * @return
+     */
+    @PostMapping(value = "/updataPhuserPswd")
+    public Phuser updataPhuserPswd(Phuser phuser){
+        Phuser p=phuserService.findByPhid(phuser.getPhid());
+        p.setPhpswd(phuser.getPhpswd());
+        return phuserService.addOrUpdata(p);
+    }
+
 }

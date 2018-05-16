@@ -18,6 +18,11 @@ public class CollectServiceImpl implements CollectService {
     private CollectRepository collectRepository;
 
     @Override
+    public void deleteByCltid(Integer Cltid) {
+        collectRepository.deleteById(Cltid);
+    }
+
+    @Override
     public int countByAieid(Integer Aieid) {
         return collectRepository.countByAieid(Aieid);
     }
@@ -40,5 +45,15 @@ public class CollectServiceImpl implements CollectService {
     @Override
     public void deleteByOyidAndAieid(Integer Oyid, Integer Aieid) {
         collectRepository.deleteByOyidAndAieid(Oyid,Aieid);
+    }
+
+    @Override
+    public Collect addOrUpdata(Collect collect) {
+        return collectRepository.save(collect);
+    }
+
+    @Override
+    public List<Collect> findByOyidAndAieid(Integer Oyid, Integer Aieid) {
+        return collectRepository.findByOyidAndAieid(Oyid,Aieid);
     }
 }

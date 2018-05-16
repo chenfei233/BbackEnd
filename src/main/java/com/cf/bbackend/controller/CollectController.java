@@ -11,6 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 文章操作
+ * 收藏操作
  */
 @RestController
 @RequestMapping("/Collect")
@@ -37,6 +38,24 @@ public class CollectController {
 
     @Autowired
     private CollectService collectService;
+
+    /**
+     * 收藏操作
+     *   该用户存在改文章收藏，则删除，否则添加收藏
+     * @param collect
+     */
+    @PostMapping(value = "/collectOperation")
+    public int collectOperation(Collect collect){
+        List<Collect> collectList=collectService.findByOyidAndAieid(collect.getOyid(),collect.getAieid());
+        logger.info("收藏查询信息："+collectList.toString());
+        if(collectList.size() > 0){
+            collectService.deleteByCltid(collectList.get(0).getCltid());
+            return -1;
+        }else{
+            collectService.addOrUpdata(collect);
+            return 1;
+        }
+    }
 
     /**
      * 根据文章id删除收藏

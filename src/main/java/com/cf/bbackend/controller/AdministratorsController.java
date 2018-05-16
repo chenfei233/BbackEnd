@@ -72,13 +72,55 @@ public class AdministratorsController {
     public ResultVO updataAdmin(Administrators administrators){
         return ResultVOUtils.success(administratorsService.addOrUpdata(administrators),1);
     }
-//    public Administrators updataAdmin(Administrators administrators){
-//        return administratorsService.addOrUpdata(administrators);
-//    }
 
-    /** 待定 参数什么都是错的 */
-    public ResultVO articleList(Administrators administrators){
-//        List<Article> articleList=articleService;
-        return ResultVOUtils.success(administrators,100);
+    /**
+     * 更新个人头像信息
+     * @param administrators
+     * @return
+     */
+    @PostMapping(value = "/updataAdminIcon")
+    public Administrators updataAdminIcon(Administrators administrators){
+        logger.info("更新个人头像信息");
+        Administrators admin=administratorsService.findByAdmid(administrators.getAdmid());
+        admin.setAdmicon(administrators.getAdmicon());
+        return administratorsService.addOrUpdata(admin);
     }
+
+    /**
+     * 更新昵称
+     * @param administrators
+     * @return
+     */
+    @PostMapping(value = "/updataAdminInfo")
+    public Administrators updataAdminInfo(Administrators administrators){
+        logger.info("更新昵称");
+        Administrators admin=administratorsService.findByAdmid(administrators.getAdmid());
+        admin.setAdmname(administrators.getAdmname());
+        return administratorsService.addOrUpdata(admin);
+    }
+
+    /**
+     * 根据id、密码查询
+     * @param administrators
+     * @return
+     */
+    @PostMapping(value = "/findByAdmidAndAdmpwd")
+    public Administrators findByAdmidAndAdmpwd(Administrators administrators){
+        logger.info("根据id、密码查询");
+        return administratorsService.findByAdmidAndAdmpwd(administrators.getAdmid(),administrators.getAdmpwd());
+    }
+
+    /**
+     * 更新密码
+     * @param administrators
+     * @return
+     */
+    @PostMapping(value = "/updataAdminPswd")
+    public Administrators updataAdminPswd(Administrators administrators){
+        logger.info("更新密码");
+        Administrators admin=administratorsService.findByAdmid(administrators.getAdmid());
+        admin.setAdmpwd(administrators.getAdmpwd());
+        return administratorsService.addOrUpdata(admin);
+    }
+
 }

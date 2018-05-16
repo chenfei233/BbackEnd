@@ -16,6 +16,9 @@ public interface PhuserService {
     /** 匹配账号、密码  */
     Phuser findByPhnumAndPhpswd(String Phnum,String Phpswd);
 
+    /** 根据id、密码查询 */
+    Phuser findByPhidAndAndPhpswd(Integer Phid,String Phpswd);
+
     /** 添加更新用户信息 */
     Phuser addOrUpdata(Phuser phuser);
 }

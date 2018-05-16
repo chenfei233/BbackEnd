@@ -17,4 +17,10 @@ public interface AdministratorsService {
     /** 更新/添加 */
     Administrators addOrUpdata(Administrators administrators);
 
+    /** 根据id来查询 */
+    Administrators findByAdmid(Integer Admid);
+
+    /** 根据id、密码来查询 */
+    Administrators findByAdmidAndAdmpwd(Integer Admid,String Admpwd);
+
 }

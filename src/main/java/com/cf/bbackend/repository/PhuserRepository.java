@@ -17,4 +17,7 @@ public interface PhuserRepository extends JpaRepository<Phuser,Integer>{
     /** 匹配账号、密码  */
     Phuser findByPhnumAndPhpswd(String Phnum,String Phpswd);
 
+    /** 根据id、密码查询 */
+    Phuser findByPhidAndAndPhpswd(Integer Phid,String Phpswd);
+
 }

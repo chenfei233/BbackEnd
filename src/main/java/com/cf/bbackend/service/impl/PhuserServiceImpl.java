@@ -31,6 +31,11 @@ public class PhuserServiceImpl implements PhuserService{
     }
 
     @Override
+    public Phuser findByPhidAndAndPhpswd(Integer Phid, String Phpswd) {
+        return phuserRepository.findByPhidAndAndPhpswd(Phid, Phpswd);
+    }
+
+    @Override
     public Phuser addOrUpdata(Phuser phuser) {
         return phuserRepository.save(phuser);
     }
