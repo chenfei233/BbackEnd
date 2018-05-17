@@ -9,6 +9,9 @@ import java.util.List;
  */
 public interface CollectService {
 
+    /** 包含该文章的收藏 */
+    List<Collect> findByAieid(Integer Aieid);
+
     /** 根据id删除收藏 */
     void deleteByCltid(Integer Cltid);
 

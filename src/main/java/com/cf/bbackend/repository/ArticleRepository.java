@@ -20,11 +20,17 @@ public interface ArticleRepository extends JpaRepository<Article,Integer> {
     /** 根据ID查询 */
     Article findByAieid(Integer aieId);
 
+    /** 查询某状态的全部文章数目 */
+    int countByAiestate(Integer Aiestate);
+
     /** 查询某状态下的全部文章 */
     List<Article> findByAiestate(Integer Aiestate);
 
-    /** 查询某状态的全部文章数目 */
-    int countByAiestate(Integer Aiestate);
+    /** 查询某类别下某状态的文章数目 */
+    int countByAiestateAndCgyid(Integer Aiestate,Integer Cgyid);
+
+    /** 查询某类别下某状态的文章 */
+    List<Article> findByAiestateAndCgyid(Integer Aiestate,Integer Cgyid);
 
     /** 查询某用户下的某状态的文章 */
     List<Article> findByPhidAndAiestate(Integer Phid, Integer Aiestate);

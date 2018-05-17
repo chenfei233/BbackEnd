@@ -34,6 +34,12 @@ public interface ArticleService {
     /** 查询某发布用户的某个状态的文章 */
     List<Article> findByPhidAndAiestate(Integer Phid,Integer Aiestate);
 
+    /** 查询某类别下某状态的文章数目 */
+    int countByAiestateAndCgyid(Integer Aiestate,Integer Cgyid);
+
+    /** 查询某类别下某状态的文章 */
+    List<Article> findByAiestateAndCgyid(Integer Aiestate,Integer Cgyid);
+
     /** 查询某发布用户的某个状态的文章(分页) */
     Page<Article> findByPhidAndAiestate(Integer Phid, Integer Aiestate,Pageable pageable);
 

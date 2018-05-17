@@ -62,6 +62,16 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     @Override
+    public int countByAiestateAndCgyid(Integer Aiestate, Integer Cgyid) {
+        return articleRepository.countByAiestateAndCgyid(Aiestate,Cgyid);
+    }
+
+    @Override
+    public List<Article> findByAiestateAndCgyid(Integer Aiestate, Integer Cgyid) {
+        return articleRepository.findByAiestateAndCgyid(Aiestate,Cgyid);
+    }
+
+    @Override
     public Page<Article> findByPhidAndAiestate(Integer Phid, Integer Aiestate,Pageable pageable) {
         Page<Article> pageArticle=articleRepository.findByPhidAndAiestate(Phid,Aiestate,pageable);
         System.out.println("分页测试0："+pageArticle.getContent());

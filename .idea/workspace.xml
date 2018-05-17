@@ -2,35 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7646840a-a13d-414e-bee0-94c086cd902a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/controller/AdministratorsController.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/controller/AdministratorsController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/controller/CollectController.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/controller/CollectController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/controller/PhuserController.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/controller/PhuserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/domain/Article.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/domain/Article.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/repository/AdministratorsRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/repository/AdministratorsRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/repository/ArticleRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/repository/ArticleRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/repository/CollectRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/repository/CollectRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/repository/PhuserRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/repository/PhuserRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/AdministratorsService.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/AdministratorsService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/CollectService.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/CollectService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/PhuserService.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/PhuserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/impl/AdministratorsServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/impl/AdministratorsServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/impl/CollectServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/impl/CollectServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/impl/PhuserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/cf/bbackend/service/impl/PhuserServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/AdministratorsController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/AdministratorsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/CollectController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/CollectController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/PhuserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/PhuserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Article.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Article.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/AdministratorsRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/AdministratorsRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/ArticleController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/ArticleController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/ArticleRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/ArticleRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/CollectRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/CollectRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/PhuserRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/PhuserRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/AdministratorsService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/AdministratorsService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/ArticleService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/ArticleService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/CollectService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/CollectService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/PhuserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/PhuserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/AdministratorsServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/AdministratorsServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/ArticleServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/ArticleServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/CollectServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/CollectServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/PhuserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/PhuserServiceImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -59,18 +39,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CollectController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CollectController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/CollectController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="51" column="72" lean-forward="false" selection-start-line="51" selection-start-column="72" selection-end-line="51" selection-end-column="72" />
+            <state relative-caret-position="92">
+              <caret line="62" column="7" lean-forward="false" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#collectOperation#0;class#CollectController#0" expanded="false" />
                 <element signature="docComment;method#deleteByAieid#0;class#CollectController#0" expanded="false" />
                 <element signature="docComment;method#deleteByOyidAndAieid#0;class#CollectController#0" expanded="false" />
                 <element signature="docComment;method#collectArticle#0;class#CollectController#0" expanded="false" />
                 <element signature="method#collectArticle#0;class#CollectController#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticleController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/ArticleController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="258" column="58" lean-forward="true" selection-start-line="258" selection-start-column="58" selection-end-line="258" selection-end-column="58" />
+              <folding>
+                <element signature="docComment;method#addArticle#0;class#ArticleController#0" expanded="false" />
+                <element signature="method#addArticle#0;class#ArticleController#0" expanded="false" />
+                <element signature="method#updataArticle#0;class#ArticleController#0" expanded="false" />
+                <element signature="method#updataArticleAiestate#0;class#ArticleController#0" expanded="false" />
+                <element signature="method#findByAieid#0;class#ArticleController#0" expanded="false" />
+                <element signature="method#findAll#0;class#ArticleController#0" expanded="false" />
+                <element signature="method#findByAiestate#0;class#ArticleController#0" expanded="false" />
+                <element signature="method#findByPhidAndAiestate#0;class#ArticleController#0" expanded="false" />
+                <element signature="method#indexArticle#0;class#ArticleController#0" expanded="false" />
+                <element signature="docComment;method#indexArticleClassify#0;class#ArticleController#0" expanded="false" />
+                <element signature="method#getAiestate#0;class#ArticleController#0" expanded="false" />
+                <element signature="method#currentTime#0;class#ArticleController#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Article.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Article.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="48" column="22" lean-forward="true" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticleServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/ArticleServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="70" column="72" lean-forward="true" selection-start-line="70" selection-start-column="72" selection-end-line="70" selection-end-column="72" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,6 +114,7 @@
     <findStrings>
       <find>adminLogin</find>
       <find>oyuser.getOyname():::</find>
+      <find>修改某篇文章信息:updataArticle</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -127,14 +152,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/BbackendApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/FileUploadController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/CorsFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/ArticleServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/CommentaryService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/CommentServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/CommentaryRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/vo/CommentaryVO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/CommentaryController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/vo/OyuserArticleVO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/ArticleController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/OyuserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/OyuserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/OyuserServiceImpl.java" />
@@ -148,12 +171,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/PhuserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/OyuserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Article.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/CollectServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/CollectService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/ArticleService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/ArticleRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/CollectRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/CollectController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/CollectRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/CollectService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/CollectServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/ArticleRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/ArticleService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/ArticleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/ArticleController.java" />
       </list>
     </option>
   </component>
@@ -184,9 +209,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,6 +253,34 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="bbackend" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BbackEnd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BbackEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bbackend" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BbackEnd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BbackEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bbackend" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BbackEnd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BbackEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bbackend" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BbackEnd" type="b2602c69:ProjectViewProjectNode" />
@@ -580,6 +633,8 @@
       <workItem from="1526377506308" duration="3601000" />
       <workItem from="1526395569019" duration="8908000" />
       <workItem from="1526436224369" duration="21631000" />
+      <workItem from="1526527611797" duration="1718000" />
+      <workItem from="1526550978879" duration="12062000" />
     </task>
     <servers />
   </component>
@@ -616,11 +671,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="386889000" />
+    <option name="totallyTimeSpent" value="400669000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -630,7 +684,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61490685" sideWeight="0.5058565" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3121118" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.113354035" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -662,7 +716,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -682,7 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -690,7 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="36" column="39" lean-forward="true" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -742,7 +794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -764,7 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
           <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -779,7 +829,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -794,7 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="27" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -802,7 +850,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -818,7 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="55" column="33" lean-forward="false" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -826,7 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
           <caret line="54" column="17" lean-forward="true" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -834,7 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
           <caret line="23" column="69" lean-forward="false" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -842,7 +886,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
           <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -850,7 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -858,7 +900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
           <caret line="19" column="62" lean-forward="false" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -866,7 +907,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
           <caret line="34" column="69" lean-forward="true" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -874,7 +914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="20" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -882,7 +921,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="98" column="56" lean-forward="true" selection-start-line="98" selection-start-column="56" selection-end-line="98" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -890,7 +928,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -898,7 +935,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -906,7 +942,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -914,7 +949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
           <caret line="15" column="46" lean-forward="false" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -922,7 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="22" column="38" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -930,10 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
           <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <element signature="method#findByOynumAndOypswd#0;class#OyuserServiceImpl#0" expanded="false" />
-            <element signature="method#findByOyidAndAndOypswd#0;class#OyuserServiceImpl#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -941,32 +970,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
           <caret line="98" column="20" lean-forward="true" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/ArticleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="31" column="20" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-          <folding>
-            <element signature="docComment;method#addArticle#0;class#ArticleController#0" expanded="false" />
-            <element signature="method#addArticle#0;class#ArticleController#0" expanded="false" />
-            <element signature="docComment;method#deleteByAieid#0;class#ArticleController#0" expanded="false" />
-            <element signature="docComment;method#updataArticle#0;class#ArticleController#0" expanded="false" />
-            <element signature="method#updataArticle#0;class#ArticleController#0" expanded="false" />
-            <element signature="docComment;method#updataArticleAiestate#0;class#ArticleController#0" expanded="false" />
-            <element signature="method#updataArticleAiestate#0;class#ArticleController#0" expanded="false" />
-            <element signature="method#findByAieid#0;class#ArticleController#0" expanded="false" />
-            <element signature="method#findAll#0;class#ArticleController#0" expanded="false" />
-            <element signature="docComment;method#findByAiestate#0;class#ArticleController#0" expanded="false" />
-            <element signature="method#findByAiestate#0;class#ArticleController#0" expanded="false" />
-            <element signature="docComment;method#findByPhidAndAiestate#0;class#ArticleController#0" expanded="false" />
-            <element signature="method#findByPhidAndAiestate#0;class#ArticleController#0" expanded="false" />
-            <element signature="docComment;method#getAiestate#0;class#ArticleController#0" expanded="false" />
-            <element signature="method#getAiestate#0;class#ArticleController#0" expanded="false" />
-            <element signature="docComment;method#currentTime#0;class#ArticleController#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -974,15 +977,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="44" column="14" lean-forward="true" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Article.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -998,30 +992,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-20">
           <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/ArticleService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/CollectController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-          <folding />
+        <state relative-caret-position="92">
+          <caret line="62" column="7" lean-forward="false" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#collectOperation#0;class#CollectController#0" expanded="false" />
+            <element signature="docComment;method#deleteByAieid#0;class#CollectController#0" expanded="false" />
+            <element signature="docComment;method#deleteByOyidAndAieid#0;class#CollectController#0" expanded="false" />
+            <element signature="docComment;method#collectArticle#0;class#CollectController#0" expanded="false" />
+            <element signature="method#collectArticle#0;class#CollectController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/CollectServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="50" lean-forward="false" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+          <folding>
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/CollectService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
-          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <caret line="12" column="45" lean-forward="false" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/CollectRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="188">
+          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="16" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -1029,7 +1042,15 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/repository/ArticleRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="32" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/ArticleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="40" column="73" lean-forward="false" selection-start-line="40" selection-start-column="73" selection-end-line="40" selection-end-column="73" />
           <folding />
         </state>
       </provider>
@@ -1037,34 +1058,36 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/ArticleServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
-          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <caret line="70" column="72" lean-forward="true" selection-start-line="70" selection-start-column="72" selection-end-line="70" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/service/impl/CollectServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/domain/Article.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-          <folding>
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="method#deleteByOyidAndAieid#0;class#CollectServiceImpl#0" expanded="false" />
-            <element signature="method#findByOyidAndAieid#0;class#CollectServiceImpl#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="325">
+          <caret line="48" column="22" lean-forward="true" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/CollectController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cf/bbackend/controller/ArticleController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="51" column="72" lean-forward="false" selection-start-line="51" selection-start-column="72" selection-end-line="51" selection-end-column="72" />
+        <state relative-caret-position="168">
+          <caret line="258" column="58" lean-forward="true" selection-start-line="258" selection-start-column="58" selection-end-line="258" selection-end-column="58" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#deleteByAieid#0;class#CollectController#0" expanded="false" />
-            <element signature="docComment;method#deleteByOyidAndAieid#0;class#CollectController#0" expanded="false" />
-            <element signature="docComment;method#collectArticle#0;class#CollectController#0" expanded="false" />
-            <element signature="method#collectArticle#0;class#CollectController#0" expanded="false" />
+            <element signature="docComment;method#addArticle#0;class#ArticleController#0" expanded="false" />
+            <element signature="method#addArticle#0;class#ArticleController#0" expanded="false" />
+            <element signature="method#updataArticle#0;class#ArticleController#0" expanded="false" />
+            <element signature="method#updataArticleAiestate#0;class#ArticleController#0" expanded="false" />
+            <element signature="method#findByAieid#0;class#ArticleController#0" expanded="false" />
+            <element signature="method#findAll#0;class#ArticleController#0" expanded="false" />
+            <element signature="method#findByAiestate#0;class#ArticleController#0" expanded="false" />
+            <element signature="method#findByPhidAndAiestate#0;class#ArticleController#0" expanded="false" />
+            <element signature="method#indexArticle#0;class#ArticleController#0" expanded="false" />
+            <element signature="docComment;method#indexArticleClassify#0;class#ArticleController#0" expanded="false" />
+            <element signature="method#getAiestate#0;class#ArticleController#0" expanded="false" />
+            <element signature="method#currentTime#0;class#ArticleController#0" expanded="false" />
           </folding>
         </state>
       </provider>

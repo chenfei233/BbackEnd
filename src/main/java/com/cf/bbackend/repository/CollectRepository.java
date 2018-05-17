@@ -12,6 +12,9 @@ public interface CollectRepository extends JpaRepository<Collect,Integer> {
 
 //    /** 根据id删除收藏 */
 //    void deleteByCltid(Integer Cltid);
+    
+    /** 包含该文章的收藏 */
+    List<Collect> findByAieid(Integer Aieid);
 
     /** 该文章下的收藏数目 */
     int countByAieid(Integer Aieid);

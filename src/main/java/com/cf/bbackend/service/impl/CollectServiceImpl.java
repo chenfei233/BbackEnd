@@ -18,6 +18,11 @@ public class CollectServiceImpl implements CollectService {
     private CollectRepository collectRepository;
 
     @Override
+    public List<Collect> findByAieid(Integer Aieid) {
+        return collectRepository.findByAieid(Aieid);
+    }
+
+    @Override
     public void deleteByCltid(Integer Cltid) {
         collectRepository.deleteById(Cltid);
     }

@@ -2,6 +2,7 @@ package com.cf.bbackend.controller;
 
 import com.cf.bbackend.domain.Article;
 import com.cf.bbackend.domain.Category;
+import com.cf.bbackend.domain.Collect;
 import com.cf.bbackend.domain.Phuser;
 import com.cf.bbackend.repository.ArticleRepository;
 import com.cf.bbackend.service.*;
@@ -71,7 +72,16 @@ public class ArticleController {
      */
     @PostMapping(value = "/updataArticle")
     public Article updataArticle(Article article){
+        logger.info("修改某篇文章信息:updataArticle  ");
         article.setAietime(currentTime());//修改文章发布时间
+        Article a=articleService.findByAieid(article.getAieid());
+        if(a.getAiestate() > 0){
+            logger.info("修改的已发布文章，需要删除collect表中相应数据");
+            List<Collect> collectList=collectService.findByAieid(article.getAieid());
+            for (int i=0; i < collectList.size(); i++){
+                collectService.deleteByCltid(collectList.get(i).getCltid());
+            }
+        }
         //article.setAiestate(0);//修改文章状态（前台传值吧）
         return articleService.addOrUpdata(article);
     }
@@ -87,6 +97,15 @@ public class ArticleController {
         Article art=new Article();
         art=articleService.findByAieid(article.getAieid());
         art.setAiestate(article.getAiestate());
+
+        if(art.getAiestate() > 0){
+            logger.info("修改的已发布文章状态，需要删除collect表中相应数据");
+            List<Collect> collectList=collectService.findByAieid(article.getAieid());
+            for (int i=0; i < collectList.size(); i++){
+                collectService.deleteByCltid(collectList.get(i).getCltid());
+            }
+        }
+
         return articleService.addOrUpdata(art);
 //        articleService.updateAiestate(article.getAiestate(),article.getAieid());
     }
@@ -212,6 +231,35 @@ public class ArticleController {
         article.setAiestate(1);
         int count=articleService.countByAiestate(article.getAiestate());
         List<Article> articleList=articleService.findByAiestate(article.getAiestate());
+        List<OyuserArticleVO> oyuserArticleVOList=new ArrayList<>();
+        for (Article a:articleList){
+            OyuserArticleVO oyuserArticleVO=new OyuserArticleVO();
+            Category c=categoryService.findByCgyid(a.getCgyid());
+
+            oyuserArticleVO.setAieid(a.getAieid());
+            oyuserArticleVO.setAieimg(a.getAieimg());
+            oyuserArticleVO.setAietitle(a.getAietitle());
+            oyuserArticleVO.setAietime(a.getAietime());
+            oyuserArticleVO.setCgyicon(c.getCgyicon());
+            oyuserArticleVO.setCgyname(c.getCgyname());
+            oyuserArticleVO.setCmtnum(commentaryService.countByAieid(a.getAieid()));//评论数
+            oyuserArticleVO.setCltnum(collectService.countByAieid(a.getAieid()));//收藏数
+            oyuserArticleVOList.add(oyuserArticleVO);
+        }
+        return ResultVOUtils.success(oyuserArticleVOList,count);
+    }
+
+    /**
+     * 系统首页
+     *      文章分类搜索的请求
+     * @param article
+     * @return
+     */
+    @GetMapping(value = "/indexArticleClassify")
+    public ResultVO indexArticleClassify(Article article){
+        article.setAiestate(1);
+        int count=articleService.countByAiestateAndCgyid(article.getAiestate(),article.getCgyid());
+        List<Article> articleList=articleService.findByAiestateAndCgyid(article.getAiestate(),article.getCgyid());
         List<OyuserArticleVO> oyuserArticleVOList=new ArrayList<>();
         for (Article a:articleList){
             OyuserArticleVO oyuserArticleVO=new OyuserArticleVO();
