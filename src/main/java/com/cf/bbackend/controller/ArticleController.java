@@ -62,6 +62,14 @@ public class ArticleController {
      */
     @GetMapping(value = "/deleteByAieid")
     public void deleteByAieid(Article article){
+        Article a=articleService.findByAieid(article.getAieid());
+        if(a.getAiestate() > 0){
+            logger.info("删除的是已发布文章，需要删除collect表中相应数据");
+            List<Collect> collectList=collectService.findByAieid(article.getAieid());
+            for (int i=0; i < collectList.size(); i++){
+                collectService.deleteByCltid(collectList.get(i).getCltid());
+            }
+        }
         articleService.deleteByAieid(article.getAieid());
     }
 
@@ -74,6 +82,7 @@ public class ArticleController {
     public Article updataArticle(Article article){
         logger.info("修改某篇文章信息:updataArticle  ");
         article.setAietime(currentTime());//修改文章发布时间
+        article.setAiestate(0);
         Article a=articleService.findByAieid(article.getAieid());
         if(a.getAiestate() > 0){
             logger.info("修改的已发布文章，需要删除collect表中相应数据");
@@ -96,8 +105,6 @@ public class ArticleController {
         logger.info("修改某篇文章状态");
         Article art=new Article();
         art=articleService.findByAieid(article.getAieid());
-        art.setAiestate(article.getAiestate());
-
         if(art.getAiestate() > 0){
             logger.info("修改的已发布文章状态，需要删除collect表中相应数据");
             List<Collect> collectList=collectService.findByAieid(article.getAieid());
@@ -105,7 +112,7 @@ public class ArticleController {
                 collectService.deleteByCltid(collectList.get(i).getCltid());
             }
         }
-
+        art.setAiestate(article.getAiestate());
         return articleService.addOrUpdata(art);
 //        articleService.updateAiestate(article.getAiestate(),article.getAieid());
     }
